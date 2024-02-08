@@ -1,0 +1,10 @@
+version: '3'
+services:
+  file_replicator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./file_replicator:/app
+    environment:
+      - PYTHONUNBUFFERED=1
